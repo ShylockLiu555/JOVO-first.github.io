@@ -1,0 +1,46 @@
+{
+  "name": "postmagthemes/ink-context-blog",
+  "description": "Ink Context Blog - A customizable, context-focused WordPress theme",
+  "type": "wordpress-theme",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "PostMag Themes",
+      "email": "info@postmagthemes.com",
+      "homepage": "https://www.postmagthemes.com"
+    }
+  ],
+  "homepage": "https://www.postmagthemes.com/downloads/ink-context-blog-a-free-wordpress-theme/",
+  "support": {
+    "docs": "https://www.postmagthemes.com/docs/documentation-of-free-context-blog-wp-theme-and-pro/",
+    "forum": "https://www.postmagthemes.com",
+    "issues": "https://www.postmagthemes.com"
+  },
+  "require": {
+    "php": ">=5.6",
+    "composer/installers": "^1.0 || ^2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0",
+    "squizlabs/php_codesniffer": "^3.5",
+    "wp-coding-standards/wpcs": "^2.3"
+  },
+  "scripts": {
+    "test": "phpunit",
+    "lint": "phpcs --standard=WordPress ."
+  },
+  "extra": {
+    "installer-paths": {
+      "wp-content/themes/{$name}/": ["type:wordpress-theme"]
+    }
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "blog",
+    "responsive",
+    "seo-friendly",
+    "customizable"
+  ]
+}
+

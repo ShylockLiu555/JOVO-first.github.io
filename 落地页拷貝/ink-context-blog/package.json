@@ -1,0 +1,49 @@
+{
+  "name": "ink-context-blog",
+  "version": "1.1.0",
+  "description": "Ink Context Blog - A customizable, context-focused WordPress theme",
+  "main": "index.php",
+  "scripts": {
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "sass assets/scss:assets/css --style=compressed",
+    "build:js": "webpack --mode production",
+    "dev": "npm run dev:css && npm run dev:js",
+    "dev:css": "sass assets/scss:assets/css --watch",
+    "dev:js": "webpack --mode development --watch",
+    "lint": "eslint assets/js --fix",
+    "test": "jest"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "blog",
+    "responsive",
+    "seo-friendly"
+  ],
+  "author": "PostMag Themes",
+  "license": "GPL-2.0-or-later",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.0",
+    "slick-carousel": "^1.8.1",
+    "aos": "^2.3.4",
+    "font-awesome": "^4.7.0",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.0",
+    "@babel/preset-env": "^7.12.0",
+    "babel-loader": "^8.2.0",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0",
+    "sass": "^1.30.0",
+    "eslint": "^7.15.0",
+    "jest": "^26.6.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
+
